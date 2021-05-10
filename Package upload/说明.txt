@@ -1,0 +1,7 @@
+code
+    ·featureget_havelabel.py ：特征提取算法，测试文件为 /test data/train07demo.csv，
+      生成特征文件为 /test data/feature_train07demo_1.csv
+
+    ·trainmodel.py ：训练模型。使用特征文件/test data/feature_train07demo_1.csv，训练出模型            random_model4.model。
+
+    ·upmodel.py ：上传模型。测试文件为/test data/feature_train07demo_1.csv，使用的模型为                 random_model4.model。
