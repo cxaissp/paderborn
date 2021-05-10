@@ -1,0 +1,50 @@
+<view class='container1'>
+  <view class='box1'>
+    <view class="title" style="color:green">正常设备</view>
+    <view class="title" style="color:red">故障设备</view>
+  </view>
+  <view class='circleContainer'>
+    <view class="square">
+      
+      <view class="innerCircle">
+        <button class='button0' style="width:48rpx;height: 20rpx;padding:0;" bindtap="navToPre_normal">.</button>
+        <view style="font-size:40px;font-weight:bold;color:green">8</view>
+      </view>
+    </view>
+    <view class="square">
+      <view class="innerCircle">  
+        <button class='button1' style="width:48rpx;height: 20rpx;padding:0;"  bindtap="navToPre_fault">.</button>       
+        <view style="font-size:40px;font-weight:bold;color:red">4</view>
+      </view>
+    </view>
+  </view>
+</view>
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{file_names}}">
+    <view class="picker">
+      <text class="title2">选择设备：</text>
+      <text class="title2" style="color:orange;font-weight:bold;font-size:18px">{{file_names[index]}}</text>
+    </view>
+  </picker>
+<view class="echartContainer">
+  <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+</view>
+<view style="width: 40%; height: 100px;margin-top:0px">
+  <view text='{{result}}'>
+    <view style="font-weight:bold;font-size:20px;color:#236b8e">指标说明</view>
+    <view style="font-weight:bold;color:#4a766e">{{result[0].key}} <text style="color:purple">{{result[0].accuracy}}</text></view>
+    <view style="font-weight:bold;color:#4a766e">{{result[1].key}} <text style="color:purple">{{result[1].recall}}</text></view>
+    <view style="font-weight:bold;color:#4a766e">{{result[2].key}} <text style="color:purple">{{result[2].precision}}</text></view>
+  </view>
+</view>
+
+<view class='box_cue'>
+  <view style="font-weight:bold;font-size:22px;color:#236b8e">健康程度：
+    <text style="color:green" wx:if='{{rate==100}}'>{{rate}}%</text>
+    <text style="color:red" wx:elif='{{rate<100}}'>{{rate}}%</text>
+  </view>
+</view>
+
+<view class="bg" >
+    <image class="bg-image" mode="scaleToFill"></image>
+</view>
+

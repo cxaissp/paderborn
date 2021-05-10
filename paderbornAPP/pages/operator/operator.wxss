@@ -1,0 +1,7 @@
+/* pages/operator/operator.wxss */
+.button{
+  color:red
+}
+.button1{
+  color:greenyellow
+}

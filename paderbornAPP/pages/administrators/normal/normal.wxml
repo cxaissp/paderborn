@@ -1,0 +1,51 @@
+<view class="tle">
+  <view class="ae by-c">
+  <block wx:for="{{infeed}}" wx:key="*this">
+   <view class="dd">{{item}}</view>
+  </block>
+  </view>
+  <block >
+  <view class="ae by-w " >
+   <view class="wc a-y">{{endwise1}}</view>
+   <view class="wc">{{tb1}}</view>
+
+
+  </view>
+   <view class="ae by-w" >
+   <view class="wc a-y">{{endwise2}}</view>
+   <view class="wc">{{tc1}}</view>
+
+  </view>
+   <view class="ae by-w" >
+   <view class="wc a-y">{{endwise3}}</view>
+   <view class="wc">{{td1}}</view>
+
+  </view>
+  <view class="ae by-w " >
+   <view class="wc a-y">{{endwise4}}</view>
+   <view class="wc">{{te1}}</view>
+  </view>
+
+   <view class="ae by-w " >
+   <view class="wc a-y">{{endwise5}}</view>
+   <view class="wc">{{tf1}}</view>
+  </view>
+
+   <view class="ae by-w " >
+   <view class="wc a-y">{{endwise6}}</view>
+   <view class="wc">{{tg1}}</view>
+  </view>
+
+   <view class="ae by-w " >
+   <view class="wc a-y">{{endwise7}}</view>
+   <view class="wc">{{th1}}</view>
+  </view>
+
+   <view class="ae by-w " >
+   <view class="wc a-y">{{endwise8}}</view>
+   <view class="wc">{{ti1}}</view>
+
+  </view>
+  </block>
+</view>
+

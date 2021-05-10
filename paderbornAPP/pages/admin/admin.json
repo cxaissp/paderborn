@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ec-canvas": "../../ec-canvas/ec-canvas"},
+  "navigationBarTitleText": "轴承在线监控"
+}

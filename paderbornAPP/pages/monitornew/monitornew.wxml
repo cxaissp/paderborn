@@ -1,0 +1,55 @@
+<!--pages/monitor/monitor.wxml-->
+<view class="big">
+<!-- 从底部弹起的滚动选择器。 -->
+<view class="big2">
+<view class="section"> 
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      <text>{{array[index]}}</text>
+    </view>
+  </picker>
+</view>
+<view class='iconfont icon-heart' style='font-size:32rpx'></view>
+<view class="section">
+  <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{allConditionName}}">
+    <view class="picker">
+      <view class='iconfont' style='color:red;font-size:23px'></view>
+      <text>{{allParams[index2].text}}<view class='iconfont icon-heart' style='font-size:32rpx'></view></text>
+    </view>
+    </picker>
+</view>
+<view class='iconfont icon-heart' style='font-size:32rpx'></view>
+</view>
+<view class="big3">
+<view class="box1">当前：
+    <text class="box" style="color:orange"> {{result[index2].arr[i]}}</text>
+    <text class="box" style="font-size:24rpx">{{time}}</text>
+</view>
+<view class="box1">
+    <text class="box"> 历史最高：{{result[index2].max}}</text>
+    <text class="box"> 历史最低：{{result[index2].min}}</text>
+</view>
+</view>
+</view>
+<!-- <scroll-view scroll-x scroll-y style="width: 100%; height: 240px;margin-top:15px">
+  <view class='gkContentBox'>
+    <view class="gkTitle">工况参数</view>
+    <view class="gkTitle">有效值</view>
+    <view class="gkTitle">历史最高值</view>
+    <view class="gkTitle">历史最低值</view>
+  </view>
+
+  <!-- 在wxml中使用scroll-view组件，实现垂直方向滚动，通过wx:for遍历result数组，item表示数组中的每一项，在这里分别对应每个工况，通过item.key，item.max和item.min展示每个工况对应的中文名和历史最大值，最小值 -->
+  <!-- <view class='gkContentBox' wx:for='{{result}}' wx:for:item='item'>
+    <view class="gkContent" style="font-weight:bold">{{item.key}}</view>
+    <view class="gkContent" style="color:orange" data-i="i">{{item.arr[i]}}</view>
+    <view class="gkContent" style="color:#237ab7">{{item.max}}</view>
+    <view class="gkContent" style="color:red">{{item.min}}</view></view>
+</scroll-view> --> 
+<view class="title">实时数据分析</view>
+<view class="echartContainer">
+  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+</view>
+<!-- <view class="bg" >
+    <image class="bg-image" mode="scaleToFill"></image>
+</view> -->

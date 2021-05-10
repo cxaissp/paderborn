@@ -1,0 +1,52 @@
+<!--pages/admin/admin.wxml-->
+<!-- <scroll-view style="width: 100%; height: 120px;margin-bottom:0px">
+ <view style="font-weight:bold"> 故障设备：               
+  <view style="font-weight:bold"><text style="color:orange">1_M01_F10：8/50</text></view>
+  <view style="font-weight:bold"><text style="color:orange">5_M07_F04：6/50</text></view>
+  <view style="font-weight:bold"><text style="color:orange">9_M07_F10：4/50</text></view>
+  <view style="font-weight:bold"><text style="color:orange">10_M07_F10：2/50</text></view>
+</view>
+</scroll-view> -->
+<view class='container'>
+  <view class='innercontainer'>
+  <button bindtap="navToPre_admin" style="width:80%;height: 200rpx;color:blue;" class='button'>
+    <image class="tapimg" style="width:60%;height: 160rpx;"
+     src="../../images/administrators.jpg" >
+    </image>
+    <p class="text">设备状态</p>
+  </button>
+</view>
+<view class='innercontainer'>
+  <button bindtap ="navToPre_operator" style="width:80%;height: 200rpx;color:blue;" class='button'>
+    <image class="tapimg" style="width:60%; height:150rpx;"
+    src="../../images/operator.jpg" >
+    </image>
+    <p class="text">实时工况</p>
+  </button>
+</view>
+</view>
+<view class='innercontainer'>
+  <button bindtap="navToPre_1" style="width:50%;height: 220rpx;color:blue;" class='button'>
+    <image class="tapimg" style="width:60%;height: 160rpx;"
+     src="../../images/operator.jpg" >
+    </image>
+    <p class="text">设备报表</p>
+  </button>
+</view>
+<view class='innercontainer'>
+  <button bindtap="navToPre_2" style="width:50%;height: 200rpx;color:blue;" class='button'>
+    <image class="tapimg" style="width:60%;height: 160rpx;"
+     src="../../images/operator.jpg" >
+    </image>
+    <p class="text">数据可视化</p>
+  </button>
+</view>
+  <view class="bg" >
+    <image class="bg-image" mode="scaleToFill"></image>
+  </view>
+
+
+
+
+
+

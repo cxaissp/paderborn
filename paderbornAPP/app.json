@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/admin/admin",
+    "pages/show/show",
+    "pages/operator/operator",
+    "pages/current/current",
+    "pages/monitornew/monitornew",
+    "pages/administrators/administrators",
+    "pages/monitor/monitor",
+    "pages/administrators/fault/fault",
+    "pages/administrators/normal/normal"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#87CEEB",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/admin/admin",
+        "text": "主页",
+        "iconPath": "images/people.jpg",
+        "selectedIconPath": "images/people0.jpg"
+      },
+      {
+        "pagePath": "pages/show/show",
+        "text": "管理员",
+        "iconPath": "images/show.jpeg",
+        "selectedIconPath": "images/show.jpeg"
+      },
+      {
+        "pagePath": "pages/operator/operator",
+        "text": "维修人员",
+        "iconPath": "images/monitor0.jpg",
+        "selectedIconPath": "images/monitor.jpg"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

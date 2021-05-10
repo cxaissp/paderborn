@@ -1,0 +1,53 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/administrators/administrators",
+          "pathName": "pages/administrators/administrators",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/admin/admin",
+          "pathName": "pages/admin/admin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/administrators/normal/normal",
+          "pathName": "pages/administrators/normal/normal",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/monitor/monitor",
+          "pathName": "pages/monitor/monitor",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/monitor/monitor",
+          "pathName": "pages/monitor/monitor",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/show/show",
+          "pathName": "pages/show/show",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

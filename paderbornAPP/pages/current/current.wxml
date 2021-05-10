@@ -1,0 +1,39 @@
+<view class="section"> 
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前设备：<view class='iconfont' style='color:red;font-size:23px'></view>
+<text style="color:#237ab7;font-weight:bold;font-size:24px">{{array[index]}}</text>
+    </view>
+  </picker>
+</view>
+<view class="table">
+  <view class="tr">
+    <view class="th">工况参数</view>
+    <view class="th">有效值</view>
+    <view class="th">历史最高值</view>
+    <view class="th">历史最低值</view>
+  </view>
+  <block wx:for='{{result}}' wx:for:item='item' >
+    <view class="tr" >
+      <view class="td">{{item.key}}</view>
+      <view class="td" data-i="i">{{item.arr[i]}}</view>
+      <view class="td">{{item.max}}</view>
+      <view class="td">{{item.min}}</view>
+    </view>
+  </block>
+</view> 
+<!-- <scroll-view scroll-x scroll-y style="width: 100%; height: 240px;margin-top:15px">
+  <view class='gkContentBox'>
+    <view class="gkTitle">工况参数</view>
+    <view class="gkTitle">有效值</view>
+    <view class="gkTitle">历史最高值</view>
+    <view class="gkTitle">历史最低值</view>
+  </view>
+
+  <!-- 在wxml中使用scroll-view组件，实现垂直方向滚动，通过wx:for遍历result数组，item表示数组中的每一项，在这里分别对应每个工况，通过item.key，item.max和item.min展示每个工况对应的中文名和历史最大值，最小值 -->
+<!-- <view class='gkContentBox' wx:for='{{result}}' wx:for:item='item'>
+    <view class="gkContent" style="font-weight:bold">{{item.key}}</view>
+    <view class="gkContent" style="color:orange" data-i="i">{{item.arr[i]}}</view>
+    <view class="gkContent" style="color:#237ab7">{{item.max}}</view>
+    <view class="gkContent" style="color:red">{{item.min}}</view></view>
+</scroll-view>  --> 

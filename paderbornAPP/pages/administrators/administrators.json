@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "ec-canvas": "../../ec-canvas/ec-canvas"},
+    "navigationBarTitleText": "轴承健康监控"
+}

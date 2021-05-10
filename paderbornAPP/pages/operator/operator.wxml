@@ -1,0 +1,31 @@
+<button bindtap='up'>维修工单</button>
+        <!--block area  -->
+      <block wx:for="{{up}}">
+        <view class="row">
+          <view class="wrap">
+            <view class="detail">
+              <view class="label">
+                    ID: <text class="word">{{item.id}}</text>
+                </view>
+                <view class="label">
+                    设备ID: <text class="word">{{item.key}}</text>
+                </view>
+               <view class="label">
+                    label: <text class="word">{{item.value}}</text>
+                </view><view class="label">
+                    故障: <text class="word">{{item.text}}</text>
+                </view><view class="label">
+                    time: <text class="word">{{item.time}}</text>
+                </view>
+            </view>
+            <view class="action">
+              <view wx:if="{{item.value>0}}">
+                <button class="button" data-text="{{item.id}}" bindtap="jump" data-jump="detailMypackageTrans">待维修</button>
+              </view>
+              <view wx:if="{{item.value==0}}">
+                <button class="button1" data-text="{{item.id}}" bindtap="jump" data-jump="detailMypackageTrans">已维修</button>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>

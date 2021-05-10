@@ -1,0 +1,54 @@
+.table {
+  border: 0px solid transparent;
+  font-size: 12px;
+}
+.tr {
+  display: flex;
+  width: 100%;
+  height: 2rem;
+  align-items: center;
+}
+.td {
+    width:40%;
+    justify-content: center;
+    text-align: center;
+}
+ 
+.th {
+  width: 40%;
+  justify-content: center;
+  display: flex;
+  /* height: 2rem; */
+  align-items: center;
+} 
+/* .gkTitle {
+  width: 25%;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.9)
+}
+
+.gkContentBox {
+  display: flex;
+  height: 500px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 40px;
+  border-bottom: 1px solid black;
+}
+
+.gkContentBox:last-child {
+  border: none;
+}
+
+.gkContent {
+  width: 25%;
+  text-align: center;
+} */
+.section{
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+}

@@ -1,0 +1,61 @@
+/* pages/admin/admin.wxss */
+/*320*456*/
+page {
+  overflow: hidden;
+  width:100%;
+}
+.container{
+  display:flex;
+  margin-top:150px;
+}
+
+
+.button{
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 5%;
+}
+.innercontainer{
+  display:flex;
+  width:400px;
+}
+.imagesize{
+  display:flex;                    
+  justify-content: center;        
+  align-items:center;          
+ }
+
+.tapimg{
+  width: 50%;
+  height: 60px;
+}
+
+.text{
+  display: flex;
+  margin: auto;
+  justify-content:center;
+  font-size: 12px;
+  text-indent: 1em;
+  color: #020202;
+  text-align: center;
+}
+
+.bg{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:url('https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2140189105,4250288060&fm=26&gp=0.jpg') 
+  no-repeat #000;
+  background-size:cover;
+  z-index:-1;
+  }
+  
+.bg-img{
+      width : 100%;
+      height : 100%;
+  }
+  .button::after{
+    border: none; 
+}
